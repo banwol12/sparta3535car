@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>붕붕붕</title>
+    <link
+      rel="stylesheet"
+      href="https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/easygpt/default.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      /* 꾸미기 */
+      .card:hover {
+        transform: scale(1.10); /* 마우스를 올렸을 때 크기를 1.1배로 확대 */
+        transition: transform 0.3s ease; /* 부드러운 전환 효과 추가 */
+      }
+
+      <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>카드 레이아웃</title>
+    <style>
+        .card-container {
+            display: flex;
+            gap: 10px; /* 각 카드 사이의 간격 조절 */
+        }
+
+        .card {
+            flex: 1; /* 각 카드가 동일한 너비를 가지도록 함 */
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 15px;
+            box-sizing: border-box;
+        }
+        
+    </style>
+  </head>
+
+  <body>
+    <div class="hero bg-dark text-center py-5">
+      <h1 class="text-white">나만의 붕붕이 찾기</h1>
+      <h2 class="text-white">필요한 차를 알아보세요!</h2>
+    </div>
+    <div class="container mt-5">
+      <div class="row">
+        <!-- 현대 카드 -->
+        <div class="col-md-4">
+          <div class="card" style="width: 18rem">
+            <img
+              src="data:image/png;base64,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"
+              class="card-img-top"
+              alt="현대 이미지"
+            />
+            <div class="card-body">
+              <h5 class="card-title">현대자동차</h5>
+              <h6 class="card-subtitle mb-2 text-muted"></h6>
+              <p class="card-text">
+                대한민국 자동차 넘버 원! 
+              </p>
+              <a
+                href="https://www.hyundai.com/kr/ko/e"
+                class="btn btn-primary"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                상세 정보 보기
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- 기아 카드 -->
+        <div class="col-md-4">
+          <div class="card" style="width: 18rem">
+            <img
+              src="data:image/png;base64,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"
+              class="card-img-top"
+              alt="기아 이미지"
+            />
+            <div class="card-body">
+              <h5 class="card-title">기아</h5>
+              <h6 class="card-subtitle mb-2 text-muted"></h6>
+              <p class="card-text">
+                디자인의 기아 이쁜 차가 최고지~
+              </p>
+              <a
+                href="https://www.kia.com/kr?utm_source=google_SA&utm_medium=AD202312&utm_campaign=KiaSales2023_brand&utm_content=keyword_pc&utm_term=%EA%B8%B0%EC%95%84&gad_source=1&gclid=CjwKCAiA1MCrBhAoEiwAC2d64WKOYB5LiGUKsvCK0NpC4p4AT_dODBBigqCjYVx0XyKnu00F83pM5hoCoeEQAvD_BwE"
+                class="btn btn-primary"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                상세 정보 보기
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- KGM 카드 -->
+        <div class="col-md-4">
+          <div class="card" style="width: 18rem">
+            <img
+              src="https://img1.daumcdn.net/thumb/C500x500/?fname=http://t1.daumcdn.net/brunch/service/user/56de/image/rTXkunb4Rj8fHK_GgZU3sA6s4ic.png"
+              class="card-img-top"
+              alt="kgm"
+            />
+            <div class="card-body">
+              <h5 class="card-title">KGM</h5>
+              <h6 class="card-subtitle mb-2 text-muted"></h6>
+              <p class="card-text">
+                당신이 알고 있는 쌍용은 죽었다. KGM으로 다시 태어난 쌍용
+              </p>
+              <a
+                href="https://www.kg-mobility.com/kr/index.html"
+                class="btn btn-primary"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                상세 정보 보기
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- 쉐보레-->
+        <div class="col-md-4">
+            <div class="card" style="width: 18rem">
+              <img
+                src="data:image/jpeg;base64,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"
+                class="card-img-top"
+                alt="쉐보레"
+              />
+              <div class="card-body">
+                <h5 class="card-title">쉐보레</h5>
+                <h6 class="card-subtitle mb-2 text-muted"></h6>
+                <p class="card-text">
+                  인터넷 명차. 기본기를 중요하게 생각하는 당신에게 알맞는 선택
+                </p>
+                <a
+                  href="https://www.chevrolet.co.kr/"
+                  class="btn btn-primary"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  상세 정보 보기
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- 르노 -->
+          <div class="col-md-4">
+            <div class="card" style="width: 18rem">
+              <img
+                src="data:image/png;base64,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"
+                class="card-img-top"
+                alt="르노"
+              />
+              <div class="card-body">
+                <h5 class="card-title">르노</h5>
+                <h6 class="card-subtitle mb-2 text-muted"></h6>
+                <p class="card-text">
+                  왜 사는 지 모르겠지만, 가성비만큼은 인정인 곳
+                </p>
+                <a
+                  href="https://www.renaultkoream.com/new/main/main.jsp"
+                  class="btn btn-primary"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  상세 정보 보기
+                </a>
+              </div>
+            </div>
+          </div>
+          <!--다나와 자동차 -->
+          <div class="col-md-4">
+            <div class="card" style="width: 18rem">
+              <img
+                src="data:image/png;base64,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"
+                alt="종합"
+              />
+              <div class="card-body">
+                <h5 class="card-title">종합</h5>
+                <h6 class="card-subtitle mb-2 text-muted"></h6>
+                <p class="card-text">
+                  결정이 힘들 떄 한 꺼번에 모든 걸 볼 수 있는 곳
+                </p>
+                <a
+                  href="https://auto.danawa.com/compare/?Codes="
+                  class="btn btn-primary"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  상세 정보 보기
+                </a>
+              </div>
+            </div>
+          </div>
+  </body>
+</html>
